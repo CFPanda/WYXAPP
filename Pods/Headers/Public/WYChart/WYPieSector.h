@@ -1,0 +1,1 @@
+../../../WYChart/WYChart/Classes/WYPieChart/Main/WYPieSector.h

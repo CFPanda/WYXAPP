@@ -1,0 +1,1 @@
+../../../DDHttpSupport/HttpSupportSpec/Classes/DDHttpManager.h

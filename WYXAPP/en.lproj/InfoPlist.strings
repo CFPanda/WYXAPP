@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  WYXAPP
+
+  Created by duanchuanfen on 2017/10/12.
+  Copyright © 2017年 DCFStrong. All rights reserved.
+*/
+CFBundleDisplayName = "ShortNote";
+

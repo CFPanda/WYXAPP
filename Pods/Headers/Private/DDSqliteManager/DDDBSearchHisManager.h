@@ -1,0 +1,1 @@
+../../../DDSqliteManager/SqliteSpec/Classes/DDDBSearchHisManager.h
