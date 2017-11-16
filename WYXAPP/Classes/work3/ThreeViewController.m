@@ -22,7 +22,7 @@
     
    // Do any additional setup after loading the view.
     [self.view addSubview:self.setTabView];
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
     self.setTabView.scrollEnabled = NO;
     [self.view addSubview:self.setTabView];
     
@@ -48,7 +48,7 @@
 - (void)creatLogoutBtn {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(40, ViewHeight - 150, ViewWidth - 80, 40);
-    btn.backgroundColor = [UIColor colorWithHexString:@"#FA8072"];
+//    btn.backgroundColor = [UIColor colorWithHexString:@"#FA8072"];
     [btn setTitle:@"Log out" forState:(UIControlStateNormal)];
     [btn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
     [btn addTarget:self action:@selector(clicklogout) forControlEvents:(UIControlEventTouchUpInside)];
@@ -93,7 +93,7 @@
         _setTabView.dataSource = self;
         _setTabView.showsVerticalScrollIndicator = NO;
         _setTabView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _setTabView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//        _setTabView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
         _setTabView.scrollEnabled = NO;
         
     }
@@ -119,7 +119,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = [UIColor colorWithHexString:@"#F0FFF0"];
+//    cell.backgroundColor = [UIColor colorWithHexString:@"#F0FFF0"];
     UIImageView *leftimageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 30, 30)];
     [cell addSubview:leftimageView];
     

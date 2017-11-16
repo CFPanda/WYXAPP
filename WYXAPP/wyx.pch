@@ -26,23 +26,12 @@
 
 
 //Category
-#import "NSString+Extension.h"
-#import "NSString+XXDWebSigh.h"
-#import "NSString+WPAttributedMarkup.h"
-#import "NSDictionary+stringToDic.h"
-#import "UIImage+Extension.h"
-#import "UIBarButtonItem+Extension.h"
-#import "UIView+Extension.h"
-#import "UINavigationBar+Awesome.h"
-#import "UIView+Animation.h"
-#import "UIImageView+Ext.h"
-#import "UIView+Alert.h"
-#import "UITextField+Ext.h"
-#import "UITableView+Ext.h"
+
+
 //#import "UITextField+NYkeyboard.h"
-#import "UIView+Toast.h"
-#import "NSDate+HandleDate.h"
-#import "NSString+PDRegex.h"
+//#import "UIView+Toast.h"
+
+
 //#import "XXDLoadingProgress.h"
 
 

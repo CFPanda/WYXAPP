@@ -35,9 +35,9 @@
     self.imageDefault = imageV;
     
     UILabel *label = [UILabel new];
-    label.frame = CGRectMake(0, CGRectGetMaxY(imageV.frame), self.width, 50);
-    label.text = NSLocalizedString(self.titleString, @"");
-    label.textColor = grayPacketColor;
+//    label.frame = CGRectMake(0, CGRectGetMaxY(imageV.frame), self.width, 50);
+//    label.text = NSLocalizedString(self.titleString, @"");
+//    label.textColor = grayPacketColor;
     label.font = [UIFont systemFontOfSize:14];
     label.numberOfLines = 2;
     label.textAlignment = NSTextAlignmentCenter;
@@ -48,7 +48,7 @@
     [super layoutSubviews];
     [super layoutSubviews];
     
-    self.imageDefault.center = CGPointMake(self.width * 0.5, self.height * 0.5 - 40);
-    self.titleLabel.frame = CGRectMake(0, CGRectGetMaxY(self.imageDefault.frame), self.width, 60);
+//    self.imageDefault.center = CGPointMake(self.width * 0.5, self.height * 0.5 - 40);
+//    self.titleLabel.frame = CGRectMake(0, CGRectGetMaxY(self.imageDefault.frame), self.width, 60);
 }
 @end

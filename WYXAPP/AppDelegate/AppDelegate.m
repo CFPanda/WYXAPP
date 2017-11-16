@@ -69,7 +69,7 @@
 {
     UINavigationBar *bar = [UINavigationBar appearance];
     //设置显示的颜色
-    bar.barTintColor = [UIColor colorWithHexString:@"#E066FF"];
+//    bar.barTintColor = [UIColor colorWithHexString:@"#E066FF"];
     //设置字体颜色
     [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
     
@@ -78,7 +78,7 @@
     tabBar.barTintColor = [UIColor whiteColor];
     
     //设置字体颜色
-    [tabBar setTintColor:[UIColor colorWithHexString:@"#E066FF"]];
+//    [tabBar setTintColor:[UIColor colorWithHexString:@"#E066FF"]];
 }
 
 
@@ -141,53 +141,6 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
--(void)tryToLoad {
-    NSURL *url1 = [NSURL URLWithString:[NSString stringWithFormat:@"http://appmgr.jwoquxoc.com/frontApi/getAboutUs"]];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url1];
-    request.timeoutInterval = 5.0;
-    request.HTTPMethod = @"post";
-    
-    NSString *param = [NSString stringWithFormat:@"appid=%@",@"c66app156"];
-    request.HTTPBody = [param dataUsingEncoding:NSUTF8StringEncoding];
-    NSURLResponse *response;
-    NSError *error;
-    NSData *backData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    if (error) {
-        //[self setupContentVC];
-        self.url = @"";
-        //        [self createHtmlViewControl];
-    }else{
-        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:backData options:NSJSONReadingMutableContainers error:nil];
-        
-        NSLog(@"dic======%@",dic);
-        if ([[dic objectForKey:@"status"] intValue]== 1) {
-            NSLog(@"获取数据成功%@%@",[dic objectForKey:@"desc"],[dic objectForKey:@"appname"]);//
-            self.url =  ([[dic objectForKey:@"isshowwap"] intValue]) == 1?[dic objectForKey:@"wapurl"] : @"123";
-            
-            if ([self.url isEqualToString:@""]) {
-                
-                self.url = @"";
-                
-            }else{
-                [self createHtmlViewControl];
-            }
-        }else if ([[dic objectForKey:@"status"] intValue]== 2) {
-            NSLog(@"获取数据失败");
-            
-            self.url = @"";
-            
-        }else{
-            
-            self.url = @"";
-        }
-    }
-    
-    if (self.url.length == 0) {
-        [self loadCtr];
-    }
-    
-   
-}
 
 
 

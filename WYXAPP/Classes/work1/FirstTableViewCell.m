@@ -13,9 +13,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
-    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
-    self.backView.layer.cornerRadius = 5;
+//    self.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//    self.backView.layer.cornerRadius = 5;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

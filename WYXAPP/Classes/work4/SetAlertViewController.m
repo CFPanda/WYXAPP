@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     btn1.frame = CGRectMake(0, 0, 30, 30);
     [btn1 setImage:[UIImage imageNamed:@"fanhui"] forState:(UIControlStateNormal)];
@@ -140,7 +140,7 @@
         _setTabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 20)];
         _setTabView.delegate = self;
         _setTabView.dataSource = self;
-        _setTabView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//        _setTabView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
         _setTabView.separatorStyle = UITableViewCellSelectionStyleNone;
         _setTabView.showsVerticalScrollIndicator = NO;
         
@@ -166,7 +166,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"cell"];
     }
-    cell.backgroundColor = [UIColor colorWithHexString:@"#F0FFF0"];
+//    cell.backgroundColor = [UIColor colorWithHexString:@"#F0FFF0"];
     cell.textLabel.text = @"Reminder time";
     
     

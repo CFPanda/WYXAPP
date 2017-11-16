@@ -154,7 +154,7 @@
         _detailTab.delegate = self;
         _detailTab.dataSource = self;
         _detailTab.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _detailTab.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//        _detailTab.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
         [_detailTab registerNib:[UINib nibWithNibName:@"DayTableViewCell" bundle:nil] forCellReuseIdentifier:@"dayCell"];
         
     }

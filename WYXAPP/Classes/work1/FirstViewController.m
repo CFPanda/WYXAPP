@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.type =0;
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//    self.view.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
     [self createCenterView];
     [self.view addSubview:self.firstTab];
     
@@ -70,7 +70,7 @@
         _firstTab = [[UITableView alloc] initWithFrame:self.view.bounds];
         _firstTab.delegate = self;
         _firstTab.dataSource = self;
-        _firstTab.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//        _firstTab.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
         _firstTab.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_firstTab registerNib:[UINib nibWithNibName:@"FirstTableViewCell" bundle:nil] forCellReuseIdentifier:@"firstCell"];
     }
@@ -152,7 +152,7 @@
         [_centerBtn setImage:[UIImage imageNamed:@"jiantoux"] forState:(UIControlStateNormal)];
         _categoryVC = [[CategoryViewController alloc]init];
         _categoryVC.modalPresentationStyle = UIModalPresentationPopover;
-        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
+//        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
         _categoryVC.delegate = self;
         _categoryVC.dataArr = self.dataArr;
         _categoryVC.preferredContentSize = CGSizeMake(200, 300);//设置弹出控制器视图的大小
@@ -199,7 +199,7 @@
         [_centerBtn setImage:[UIImage imageNamed:@"jiantoux"] forState:(UIControlStateNormal)];
         _categoryVC = [[CategoryViewController alloc]init];
         _categoryVC.modalPresentationStyle = UIModalPresentationPopover;
-        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
+//        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
         _categoryVC.dataArr = self.dataArr;
         _categoryVC.delegate = self;
         _categoryVC.preferredContentSize = CGSizeMake(200, 300);//设置弹出控制器视图的大小

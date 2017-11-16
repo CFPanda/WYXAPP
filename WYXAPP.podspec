@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Category", "WYXAPP/Category/**/*.{h,m}"
-  s.exclude_files = "Category/Exclude"
+  #s.exclude_files = "Category/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+   #s.frameworks = "Foundation", "UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -133,6 +133,6 @@ Pod::Spec.new do |s|
    s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   # s.dependency "JSONKit", "~> 1.4"
+   #s.dependency 'AFNetworking'
 
 end

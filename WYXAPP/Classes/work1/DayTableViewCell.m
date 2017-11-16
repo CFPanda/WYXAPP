@@ -13,8 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
-    self.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
-    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//    self.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
+//    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#FFE1FF"];
     
 }
 

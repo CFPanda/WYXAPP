@@ -218,7 +218,7 @@
         [_centerBtn setImage:[UIImage imageNamed:@"jiantoux"] forState:(UIControlStateNormal)];
         _categoryVC = [[CategoryViewController alloc]init];
         _categoryVC.modalPresentationStyle = UIModalPresentationPopover;
-        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
+//        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
         _categoryVC.delegate = self;
         _categoryVC.dataArr = self.dataArr;
         _categoryVC.preferredContentSize = CGSizeMake(200, 300);//设置弹出控制器视图的大小
@@ -265,7 +265,7 @@
         [_centerBtn setImage:[UIImage imageNamed:@"jiantoux"] forState:(UIControlStateNormal)];
         _categoryVC = [[CategoryViewController alloc]init];
         _categoryVC.modalPresentationStyle = UIModalPresentationPopover;
-        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
+//        _categoryVC.view.backgroundColor = [UIColor colorWithHexString:@"#E066FF" alpha:0.5];
         _categoryVC.dataArr = self.dataArr;
         _categoryVC.delegate = self;
         _categoryVC.preferredContentSize = CGSizeMake(200, 300);//设置弹出控制器视图的大小
