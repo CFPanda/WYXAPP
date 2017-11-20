@@ -18,6 +18,8 @@
 		57336C251F73B3AD00254297 /* SetAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57336C221F73B3AD00254297 /* SetAlertViewController.m */; };
 		575124E91F8F587000CBA9AA /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575124E81F8F587000CBA9AA /* NoDataView.m */; };
 		575124EB1F8F5D0A00CBA9AA /* 闹钟.png in Resources */ = {isa = PBXBuildFile; fileRef = 575124EA1F8F5CB700CBA9AA /* 闹钟.png */; };
+		5752725D1FC274790092B4C4 /* SafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5752725C1FC274790092B4C4 /* SafeViewController.m */; };
+		575272661FC278E60092B4C4 /* CFLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 575272651FC278E60092B4C4 /* CFLockViewController.m */; };
 		57634ADB1F78B3010075BDCB /* SecondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57634ADA1F78B3010075BDCB /* SecondModel.m */; };
 		57634ADF1F78CBB10075BDCB /* SecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57634ADD1F78CBB10075BDCB /* SecondTableViewCell.m */; };
 		57634AE01F78CBB10075BDCB /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57634ADE1F78CBB10075BDCB /* SecondTableViewCell.xib */; };
@@ -131,6 +133,10 @@
 		575124E71F8F587000CBA9AA /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
 		575124E81F8F587000CBA9AA /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
 		575124EA1F8F5CB700CBA9AA /* 闹钟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "闹钟.png"; sourceTree = "<group>"; };
+		5752725B1FC274790092B4C4 /* SafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeViewController.h; sourceTree = "<group>"; };
+		5752725C1FC274790092B4C4 /* SafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeViewController.m; sourceTree = "<group>"; };
+		575272641FC278E60092B4C4 /* CFLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFLockViewController.h; sourceTree = "<group>"; };
+		575272651FC278E60092B4C4 /* CFLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFLockViewController.m; sourceTree = "<group>"; };
 		57634AD91F78B3010075BDCB /* SecondModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondModel.h; sourceTree = "<group>"; };
 		57634ADA1F78B3010075BDCB /* SecondModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondModel.m; sourceTree = "<group>"; };
 		57634ADC1F78CBB10075BDCB /* SecondTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondTableViewCell.h; sourceTree = "<group>"; };
@@ -400,6 +406,10 @@
 			children = (
 				576AE3911F6FC03D0047538E /* ThreeViewController.h */,
 				576AE3921F6FC03D0047538E /* ThreeViewController.m */,
+				5752725B1FC274790092B4C4 /* SafeViewController.h */,
+				5752725C1FC274790092B4C4 /* SafeViewController.m */,
+				575272641FC278E60092B4C4 /* CFLockViewController.h */,
+				575272651FC278E60092B4C4 /* CFLockViewController.m */,
 			);
 			name = Three;
 			path = work3;
@@ -880,11 +890,11 @@
 				TargetAttributes = {
 					578230D91F6236D000A8EB77 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 5T2DD5XK72;
+						DevelopmentTeam = X74AKNKAD9;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1043,6 +1053,7 @@
 				576AE3901F6FBF330047538E /* SecondViewController.m in Sources */,
 				577B279A1F7252AD001CF1AB /* DayModel.m in Sources */,
 				576F6EFA1F6A1FAD0005533E /* DDTabbar.m in Sources */,
+				575272661FC278E60092B4C4 /* CFLockViewController.m in Sources */,
 				576F6EE41F6A1D5B0005533E /* YLImageView.m in Sources */,
 				576F6ED61F6A1D5B0005533E /* WPTappableLabel.m in Sources */,
 				577B27A11F726124001CF1AB /* FirstTableViewCell.m in Sources */,
@@ -1060,6 +1071,7 @@
 				576F6EDE1F6A1D5B0005533E /* SDBrowserImageView.m in Sources */,
 				57336C251F73B3AD00254297 /* SetAlertViewController.m in Sources */,
 				57336BA61F7380D000254297 /* DayDetailViewController.m in Sources */,
+				5752725D1FC274790092B4C4 /* SafeViewController.m in Sources */,
 				576AE38D1F6FBF250047538E /* FirstViewController.m in Sources */,
 				57E9D26D1F7A06D600A26AEE /* MySaveViewController.m in Sources */,
 				576F6EDF1F6A1D5B0005533E /* SDPhotoBrowser.m in Sources */,
@@ -1206,11 +1218,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = WYXAPP/WYXAPP.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunjia Zhu (89BH56AE9K)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5T2DD5XK72;
+				DEVELOPMENT_TEAM = X74AKNKAD9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1234,11 +1245,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_ENTITLEMENTS = WYXAPP/WYXAPP.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunjia Zhu (89BH56AE9K)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5T2DD5XK72;
+				DEVELOPMENT_TEAM = X74AKNKAD9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

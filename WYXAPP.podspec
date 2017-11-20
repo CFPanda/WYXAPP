@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Category", "WYXAPP/Category/**/*.{h,m}"
+  s.source_files  = "Category", "WYXAPP/Category/NSArray/*.{h,m}"
   #s.exclude_files = "Category/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

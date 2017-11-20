@@ -21,6 +21,7 @@
 #import "SecondViewController.h"
 #import "ThreeViewController.h"
 #import "LoginViewController.h"
+#import "CFLockViewController.h"
 @interface AppDelegate ()<JPUSHRegisterDelegate>
 @property (nonatomic ,strong)NSString *url;
 @property (nonatomic ,assign)unsigned int soundId;
@@ -30,10 +31,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    
-   
     
     BOOL isClose = [[[NSUserDefaults standardUserDefaults] objectForKey:@"isClose"] boolValue];
     if (isClose) {
@@ -55,6 +52,12 @@
     
     [self createHtmlViewControl];
     [self setNav];
+    
+    if (YES) {
+        CFLockViewController *lockVc = [[CFLockViewController alloc]  init];
+        self.window.rootViewController = lockVc;
+    
+    }
     
    
     return YES;

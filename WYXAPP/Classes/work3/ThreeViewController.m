@@ -10,6 +10,7 @@
 #import "SetAlertViewController.h"
 #import "LoginViewController.h"
 #import "RegistViewController.h"
+#import "SafeViewController.h"
 @interface ThreeViewController ()<UITableViewDelegate,UITableViewDataSource,UIActionSheetDelegate>
 @property (strong, nonatomic)  UITableView *setTabView;
 
@@ -108,7 +109,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 6;
+    return 7;
 }
 
 
@@ -191,6 +192,10 @@
         }
             break;
             
+        case 6:{
+            titlelabel.text = @"账户安全";
+        }
+           break;
         default:
             break;
     }
@@ -250,6 +255,12 @@
             
         case 5:
             
+            break;
+            
+        case 6:{
+            SafeViewController *safeVC = [[SafeViewController alloc] init];
+            [self.navigationController pushViewController:safeVC animated:YES];
+        }
             break;
             
         default:
