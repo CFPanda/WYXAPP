@@ -22,15 +22,6 @@
     if (self = [super initWithFrame:frame]) {
         ddClickBlock = clickBlock;
         
-        //        CGSize firstPartSize = [[UtilSupportClass ShareInstance]CountFontSize:remindText FontSize:13.0];
-        //        CGFloat width = firstPartSize.width < frame.size.width ? firstPartSize.width : frame.size.width;
-        //        UILabel *remindLabel = [[UILabel
-        //        CGSize firstPartSize = [[UtilSupportClass ShareInstance]CountFontSize:remindText FontSize:13.0];
-        //        CGFloat width = firstPartSize.width < frame.size.width ? firstPartSize.width : frame.size.width;
-        //        UILabel *remindLabel = [[UILabel
-        //        CGSize firstPartSize = [[UtilSupportClass ShareInstance]CountFontSize:remindText FontSize:13.0];
-        //        CGFloat width = firstPartSize.width < frame.size.width ? firstPartSize.width : frame.size.width;
-        //        UILabel *remindLabel = [[UILabel
 //        CGSize firstPartSize = [[UtilSupportClass ShareInstance]CountFontSize:remindText FontSize:13.0];
 //        CGFloat width = firstPartSize.width < frame.size.width ? firstPartSize.width : frame.size.width;
 //        UILabel *remindLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, width, frame.size.height)];
