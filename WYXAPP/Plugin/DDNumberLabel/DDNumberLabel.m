@@ -21,6 +21,7 @@
 - (instancetype)initWithFrame:(CGRect)frame RemindText:(NSString *)remindText ClickText:(NSString *)clickText ClickBlock:(DDNumberClickBlock)clickBlock {
     if (self = [super initWithFrame:frame]) {
         ddClickBlock = clickBlock;
+        //dewieiohfoierhfoerferfr
 //        CGSize firstPartSize = [[UtilSupportClass ShareInstance]CountFontSize:remindText FontSize:13.0];
 //        CGFloat width = firstPartSize.width < frame.size.width ? firstPartSize.width : frame.size.width;
 //        UILabel *remindLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, width, frame.size.height)];
